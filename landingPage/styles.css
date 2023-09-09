@@ -2,6 +2,7 @@
 
 :root {
     --colorDeFondo: #eafdf5;
+    --colorIcono1: #e91c1c;
 }
 
 * {
@@ -118,4 +119,61 @@ nav ul {
         #eafdf5);
     border-radius: 5px;
     opacity: 0.5;
+}
+
+#hero::after {
+    content: " ";
+    display: block;
+    height: 3rem;
+}
+
+/*Seccion de caracteristicas*/
+
+#características {
+    width: 85%;
+    height: auto;
+    margin: 1.5rem auto;
+    line-height: 1.5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    line-height: 2;
+}
+
+#características h2 {
+    text-align: left;
+}
+
+#características p {
+    text-align: justify;
+}
+
+.icono, .descripción {
+    align-self: center;
+    justify-self: center;
+    margin-top: 3rem;
+}
+
+.icono {
+    font-size: 5rem;
+    color: var(--colorIcono1);
+}
+
+.descripción {
+    padding: 0 2rem;
+}
+
+/*Video de funcion*/
+
+#función {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+#función>iframe {
+    border-radius: 6px;
 }
