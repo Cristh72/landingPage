@@ -109,6 +109,7 @@ nav ul {
 
 .btn {
     display:block;
+    min-width: 6.5rem;
     width:20%;
     margin: 1em auto;
     font-size:1.1rem;
@@ -177,3 +178,28 @@ nav ul {
 #función>iframe {
     border-radius: 6px;
 }
+
+/* Valores y precios*/
+
+#precios {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: 1.5rem auto;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.producto {
+    display: grid;
+    grid-template-rows: 5rem 4rem 25rem 4rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    line-height: 1.5;
+    width: 40%;
+    height: 100%;
+    margin: 0 1rem;
+    padding: 2rem;
+}
+
